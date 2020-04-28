@@ -25,8 +25,20 @@ VOLUME /config/.config/qBittorrent
 ENV OPENVPN_USERNAME=**None** \
     OPENVPN_PASSWORD=**None** \
     OPENVPN_PROVIDER=**None** \
+    GLOBAL_APPLY_PERMISSIONS=true \
+    ENABLE_UFW=false \
+    UFW_ALLOW_GW_NET=false \
+    UFW_EXTRA_PORTS= \
+    UFW_DISABLE_IPTABLES_REJECT=false \
     PUID=\
-    PGID=
+    PGID=\
+    TRANSMISSION_WEB_HOME= \
+    DROP_DEFAULT_ROUTE= \
+    WEBPROXY_ENABLED=false \
+    WEBPROXY_PORT=8888 \
+    DOCKER_LOG=false \
+    HEALTH_CHECK_HOST=google.com
+
 # - Set xterm for nano
 ENV TERM xterm
 
